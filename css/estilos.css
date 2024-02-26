@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+ 
+*{
+    margin:0;
+    padding:0;
+    font-family: "Oswald", sans-serif;
+ }
+
+ 
+ /* INDEX ................................................*/
+
+ body {
+    background-color: black;
+ }
+
+ /* ----nav---- */
+
+ .nav_index {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ .nav_index ul {
+    display: flex;
+ }
+
+ .nav_index ul li{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* falta cambiar la letra - enlasar con @import */
+
+
+ }
+
+ /* ----main index----   */
+
+ .div_index a img {
+    width:700px;
+    display: flex;
+    justify-content: center;
+
+ }
+
+
+ /* ABAOUT ............................................*/
+
+ /* RELEASES ..........................................*/
+
+ /* ----------Nav R --------*/
+ .nav_releases {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+  
+}
+.nav_releases ul {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   flex-direction: column-reverse;
+   
+ 
+}
+
+.nav_releases ul li {
+   list-style: none;
+   display: flex;
+   color: white;
+   margin: 60px;
+  
+   
+}
+
+.nav_releases ul li a {
+   list-style: none;
+   color: white;
+   text-decoration: none;
+   font-size: 25px;
+
+   
+
+
+}
+
+.nav_releases ul a img {
+   width: 150px;
+}
+
+
+
+
+ /* ----------Main R --------*/
+ .main_release h1{
+    color: rgb(150, 150, 150) ;
+ }
+
+
+ .main_release section  article  h3 {
+    color: white;
+    font-size: medium;
+ }
+
+/* 2019 */
+/* --------------------------------*/
+ .lanzamiento2019 {  
+   display: grid;
+   grid-template-rows: repeat(4);
+   grid-auto-columns: 1fr;
+   gap: 0px 0px;
+   grid-auto-flow: row;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-items: center;
+ }
+ 
+ .imgv { grid-area: 1 / 1 / 2 / 2; 
+   background-image: url(../resourses/releases/vano.jpeg);
+    width: 300px;
+    height: 300px;
+   background-size: cover;}
+ 
+ .imgf { grid-area: 2 / 1 / 3 / 2;
+   background-image: url(../resourses/releases/graciaalderaan2.jpeg);
+    width: 300px;
+    height: 300px;
+   background-size: cover;
+}
+ 
+ .imge { grid-area: 3 / 1 / 4 / 2;
+   background-image: url(../resourses/releases/amuletokyntral2.jpeg);
+    width: 300px;
+    height: 300px;
+   background-size: cover;
+}
+ 
+ .imgg { grid-area: 4 / 1 / 5 / 2; 
+   background-image: url(../resourses/releases/AVisionOfLight2.jpeg);
+   width: 300px;
+   height: 300px;
+   background-size: cover;}
+ /* -------------------------------------------------- */
+
+
+ .main_release h1{
+   color: rgb(107, 107, 107);
+   font-size: 40px;
+   margin: 30px;
+   padding: 30px;
+   
+}
+
+.main_release h2{
+   color: rgb(202, 202, 202);
+   display: flex;
+   justify-content: space-around;
+   font-size: 30px;
+   margin: 30px;
+   padding: 30px;
+}
+ 
+
+ .lanzamiento2019 article {
+   margin: 10px;
+   padding: 10px;
+   
+ }
+
+ 
+ /* {ESTRATEGIA RESPONSIVE: MOVILE FIRST} */
+
+@media (min-width: 375px){
+   .nav_releases ul {
+       display: flex;
+       align-items: center;
+       flex-direction: column-reverse;
+    }
+ 
+  }
+ 
+  @media (min-width: 375px){
+   .nav_releases ul li{
+       margin: 5px;
+    }
+ }
+ 
+  @media (min-width: 750px){
+ .nav_releases ul {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+ }
+  }
+  @media (min-width: 750px){
+  .nav_releases ul li{
+       margin: 90px;
+    }
+ }
+
+
+
+
+ @media (min-width: 750px)
+ {
+   .lanzamiento2019 {
+      display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "imgv imgf"
+        "imge imgg"; 
+    }
+    .imgv { grid-area: imgv; }
+    .imgf { grid-area: imgf; }
+    .imge { grid-area: imge; }
+    .imgg { grid-area: imgg; }
+ }
+
+
+ @media (min-width: 1400px){
+   .lanzamiento2019 {
+      display: grid; 
+      grid-auto-columns: 1fr; 
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "imgv imgf imge imgg"
+        "imgv imgf imge imgg"; 
+    }
+    .imgv { grid-area: imgv; }
+.imgf { grid-area: imgf; }
+.imge { grid-area: imge; }
+.imgg { grid-area: imgg; }
+ }
+
+
+
+ /* SHOP ..........................................*/
+
+ /* ----------Nav S --------*/
+ 
+
+ .nav_shop{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+  
+}
+.nav_shop ul {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   flex-direction: column-reverse;
+   
+ 
+}
+
+.nav_shop ul li {
+   list-style: none;
+   color: white;
+   font-size: 30px;
+   display: flex;
+   margin: 60px;
+  
+   
+}
+
+.nav_shop ul li a {
+   list-style: none;
+   color: white;
+   text-decoration: none;
+   font-size: 25px;
+   
+}
+
+.nav_shop ul a img {
+   width: 150px;
+}
+
+.main_shop h1{
+   color: rgb(107, 107, 107);
+   font-size: 40px;
+   margin: 30px;
+   padding: 30px;
+   
+}
+
+.carouselchico {
+   width: 500px;
+   margin: auto;
+   display: flex;
+}
+
+
+.main_shop h2 {
+   color: rgb(202, 202, 202);
+   display: flex;
+   justify-content: space-around;
+   font-size: 30px;
+   margin: 30px;
+   padding: 30px;
+}
+
+
+@media (min-width: 375px){
+   .nav_shop ul {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+   }
+
+ }
+
+ @media (min-width: 375px){
+   .nav_shop ul li{
+      margin: 5px;
+   }
+}
+
+ @media (min-width: 750px){
+.nav_shop ul {
+   display: flex;
+   align-items: stretch;
+   flex-direction: row;
+   margin: 10px;
+   padding: 10px;
+}
+ }
+ @media (min-width: 750px){
+   .nav_shop ul li{
+      margin: 90px;
+   }
+}
