@@ -48,6 +48,7 @@
    font-size: 25px;
 
 }
+ /* {ESTRATEGIA RESPONSIVE: MOVILE FIRST} */
 
 @media (min-width: 375px){
    .nav_index ul{
@@ -128,14 +129,14 @@
    text-decoration: none;
    font-size: 25px;
 
-   
-
-
 }
 
 .nav_about ul a img {
    width: 150px;
 }
+
+ /* {ESTRATEGIA RESPONSIVE: MOVILE FIRST} */
+
 @media (min-width: 375px){
    .nav_about ul {
       display: flex;
@@ -184,8 +185,100 @@
    margin: 50px;
 }
 
+ /* ARTISTS .......................................... */
+ .nav_artists {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+  
+}
+.nav_artists ul {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   flex-direction: column-reverse;
+   
+ 
+}
+
+.nav_artists ul li {
+   list-style: none;
+   display: flex;
+   color: white;
+   margin: 60px;
+  
+   
+}
+
+.nav_artists ul li a {
+   list-style: none;
+   color: white;
+   text-decoration: none;
+   font-size: 25px;
+
+   
 
 
+}
+
+.nav_artists ul a img {
+   width: 150px;
+}
+
+ /* {ESTRATEGIA RESPONSIVE: MOVILE FIRST} */
+
+ @media (min-width: 375px){
+   .nav_artists ul{
+       display: flex;
+       align-items: center;
+       flex-direction: column-reverse;
+    }
+ 
+  }
+ 
+  @media (min-width: 375px){
+   .nav_artists ul li{
+       margin: 5px;
+    }
+ }
+ 
+  @media (min-width: 750px){
+ .nav_artists ul{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+ }
+  }
+  @media (min-width: 750px){
+  .nav_artists ul li{
+       margin: 90px;
+    }
+ }
+
+/* MAIN ARTISTS */
+
+
+.main_artists section {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.main_artists section article h2 {
+   color: rgb(202, 202, 202);
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   
+}
+
+.main_artists section article img {
+   width: 400px;
+   padding: 20px;
+   margin: 30px;
+
+}
 
  /* RELEASES ..........................................*/
 
