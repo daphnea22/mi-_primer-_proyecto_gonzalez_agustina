@@ -337,6 +337,8 @@
    width: 150px;
 }
 
+/* Main Shop */
+
 .main_shop h1{
    color: rgb(107, 107, 107);
    font-size: 40px;
@@ -361,6 +363,18 @@
    padding: 30px;
 }
 
+.form_shop {
+   margin: 50px;
+   font-size: 30px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   
+}
+
+.form_shop p{
+   display: flex;
+}
 
 @media (min-width: 375px){
    .nav_shop ul {
