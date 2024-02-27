@@ -19,7 +19,7 @@
    display: flex;
    align-items: center;
    flex-direction: column;
-   margin: 0 100px 0px 100px; 
+   margin: 0 100px 0 100px; 
   
 }
 
@@ -36,7 +36,7 @@
    list-style: none;
    display: flex;
    color: white;
-   margin: 60px;
+   margin: 50px;
   
    
 }
@@ -86,12 +86,12 @@
  .main_index{
    display: flex;
    justify-content: center;
-   margin: top 0 100px 100px 100px;
+   margin: top 0 100px 0px 100px;
 
   }
 
  .div_index a img{
-    width: 700px;
+    width: 600px;
     display: flex;
     
 
